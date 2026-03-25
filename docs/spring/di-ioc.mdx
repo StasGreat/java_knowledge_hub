@@ -1,0 +1,74 @@
+---
+title: DI and IoC
+sidebar_position: 2
+---
+
+import TopicProgress from '@site/src/components/TopicProgress';
+import TopicQuiz from '@site/src/components/TopicQuiz';
+
+<TopicProgress topicId="spring-di-ioc" title="DI and IoC progress" />
+
+# DI and IoC
+
+## IoC
+
+Inversion of Control means the framework controls object creation and lifecycle instead of the application code doing that everywhere manually.
+
+## DI
+
+Dependency Injection is a way to provide required dependencies to an object from the outside.
+
+## Example
+
+```java
+@Service
+public class UserService {
+    private final UserRepository userRepository;
+
+    public UserService(UserRepository userRepository) {
+        this.userRepository = userRepository;
+    }
+}
+```
+
+## Why constructor injection is preferred
+
+- dependencies are explicit
+- easier to test
+- supports immutable fields
+- simpler to reason about than field injection
+
+## Practice tasks
+
+1. Explain IoC and DI in plain words.
+2. Rewrite a field-injected class into constructor injection.
+3. Describe what Spring container does during application startup.
+
+<TopicQuiz
+  topicId="spring-di-ioc"
+  questions={[
+    {
+      question: 'What does IoC mainly change in an application?',
+      options: [
+        'It removes constructors from Java',
+        'It moves object creation and lifecycle control to the framework container',
+        'It makes all beans static',
+        'It replaces interfaces with abstract classes',
+      ],
+      correctIndex: 1,
+      explanation: 'In IoC, the framework container manages object creation and lifecycle.',
+    },
+    {
+      question: 'Which injection style is usually preferred in Spring services?',
+      options: ['Field injection', 'Constructor injection', 'Static injection', 'Setter injection only'],
+      correctIndex: 1,
+      explanation: 'Constructor injection makes dependencies explicit and helps testing and immutability.',
+    },
+    {
+      question: 'What is being injected in DI?',
+      options: ['Only primitive values', 'Only HTTP requests', 'Required dependencies of an object', 'Only SQL queries'],
+      correctIndex: 2,
+      explanation: 'Dependency Injection provides the dependencies an object needs to work.',
+    },
+  ]}
+/>

@@ -5,7 +5,7 @@ sidebar_position: 1
 
 # Database Overview
 
-SQL and relational database fundamentals are almost always part of backend interviews.
+SQL and relational database fundamentals are a core part of backend learning.
 
 ## Key themes
 

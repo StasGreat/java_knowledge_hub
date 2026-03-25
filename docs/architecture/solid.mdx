@@ -1,0 +1,67 @@
+---
+title: SOLID
+sidebar_position: 2
+---
+
+import TopicProgress from '@site/src/components/TopicProgress';
+import TopicQuiz from '@site/src/components/TopicQuiz';
+
+<TopicProgress topicId="architecture-solid" title="SOLID progress" />
+
+# SOLID
+
+## Definition
+
+SOLID is a set of five object-oriented design principles that help keep code maintainable, extensible, and easier to test.
+
+## The five principles
+
+- Single Responsibility Principle
+- Open/Closed Principle
+- Liskov Substitution Principle
+- Interface Segregation Principle
+- Dependency Inversion Principle
+
+## Practical interpretation
+
+SOLID is not about memorizing five names. It is about reducing change impact and making code easier to extend without breaking existing behavior.
+
+## Practice tasks
+
+1. Give one example of SRP from a service class.
+2. Explain ISP using a large interface that should be split.
+3. Explain DIP with a service depending on an interface instead of a concrete implementation.
+
+<TopicQuiz
+  topicId="architecture-solid"
+  questions={[
+    {
+      question: 'What is the main idea of Single Responsibility Principle?',
+      options: [
+        'A class should have one reason to change',
+        'A class should contain one method only',
+        'A class must not use interfaces',
+        'A class should always be abstract',
+      ],
+      correctIndex: 0,
+      explanation: 'SRP says a class should have one primary responsibility and therefore one main reason to change.',
+    },
+    {
+      question: 'Which principle says high-level modules should depend on abstractions?',
+      options: ['OCP', 'ISP', 'DIP', 'LSP'],
+      correctIndex: 2,
+      explanation: 'Dependency Inversion Principle says high-level code should depend on abstractions, not concrete implementations.',
+    },
+    {
+      question: 'What problem does Interface Segregation Principle try to avoid?',
+      options: [
+        'Classes being forced to implement methods they do not need',
+        'Methods having too many local variables',
+        'Too many SQL tables',
+        'Using generics in services',
+      ],
+      correctIndex: 0,
+      explanation: 'ISP avoids fat interfaces that force clients to depend on methods they do not use.',
+    },
+  ]}
+/>

@@ -3,7 +3,7 @@ import type { Preset } from '@docusaurus/preset-classic';
 
 const config: Config = {
   title: 'Java Knowledge Hub',
-  tagline: 'Interactive interview preparation for Java Backend',
+  tagline: 'Learning hub for Java theory, quizzes, and practice',
   favicon: 'img/favicon.ico',
 
   url: 'https://StasGreat.github.io',
@@ -15,7 +15,12 @@ const config: Config = {
   trailingSlash: false,
 
   onBrokenLinks: 'throw',
-  onBrokenMarkdownLinks: 'warn',
+
+  markdown: {
+    hooks: {
+      onBrokenMarkdownLinks: 'warn',
+    },
+  },
 
   i18n: {
     defaultLocale: 'en',
@@ -48,8 +53,10 @@ const config: Config = {
         src: 'img/logo.svg',
       },
       items: [
-        { to: '/docs/intro', label: 'Topics', position: 'left' },
+        { to: '/docs/intro', label: 'Learn', position: 'left' },
         { to: '/practice', label: 'Practice', position: 'left' },
+        { to: '/progress', label: 'Progress', position: 'left' },
+        { to: '/docs/quizzes/final-quiz', label: 'Final Quiz', position: 'left' },
         {
           href: 'https://github.com/StasGreat/java_knowledge_hub',
           label: 'GitHub',
@@ -61,10 +68,11 @@ const config: Config = {
       style: 'dark',
       links: [
         {
-          title: 'Learn',
+          title: 'Study',
           items: [
-            { label: 'Topics', to: '/docs/intro' },
+            { label: 'Learn', to: '/docs/intro' },
             { label: 'Practice', to: '/practice' },
+            { label: 'Progress', to: '/progress' },
           ],
         },
       ],

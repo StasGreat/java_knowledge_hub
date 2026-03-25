@@ -5,7 +5,7 @@ sidebar_position: 1
 
 # Architecture Overview
 
-Architecture questions test how you think about maintainability, scaling, and system organization.
+Architecture topics help you reason about maintainability, change impact, and system organization.
 
 ## Good starter topics
 

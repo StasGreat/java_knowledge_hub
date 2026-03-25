@@ -1,0 +1,70 @@
+---
+title: SQL Joins
+sidebar_position: 2
+---
+
+import TopicProgress from '@site/src/components/TopicProgress';
+import TopicQuiz from '@site/src/components/TopicQuiz';
+
+<TopicProgress topicId="database-sql-joins" title="SQL Joins progress" />
+
+# SQL Joins
+
+## Why joins matter
+
+Joins combine rows from multiple tables based on a related column.
+
+## Main join types
+
+- `INNER JOIN`
+- `LEFT JOIN`
+- `RIGHT JOIN`
+- `FULL JOIN`
+
+## Example
+
+```sql
+SELECT u.id, u.name, o.id AS order_id
+FROM users u
+LEFT JOIN orders o ON o.user_id = u.id;
+```
+
+## Quick meaning
+
+- `INNER JOIN` returns only matched rows
+- `LEFT JOIN` returns all rows from the left table and matched rows from the right table
+
+## Practice tasks
+
+1. Explain the difference between `INNER JOIN` and `LEFT JOIN`.
+2. Write a query that returns all users and the count of their orders.
+3. Explain why filters in `WHERE` and `ON` can produce different results with outer joins.
+
+<TopicQuiz
+  topicId="database-sql-joins"
+  questions={[
+    {
+      question: 'Which join returns only rows that match in both tables?',
+      options: ['LEFT JOIN', 'RIGHT JOIN', 'INNER JOIN', 'FULL JOIN'],
+      correctIndex: 2,
+      explanation: 'INNER JOIN returns only rows that have matching values in both tables.',
+    },
+    {
+      question: 'What does LEFT JOIN guarantee?',
+      options: [
+        'All rows from the right table',
+        'All rows from the left table',
+        'Only matched rows',
+        'Only rows with NULL values',
+      ],
+      correctIndex: 1,
+      explanation: 'LEFT JOIN keeps all rows from the left table even when there is no match.',
+    },
+    {
+      question: 'What usually appears in right-table columns when LEFT JOIN finds no match?',
+      options: ['0', 'false', 'NULL', 'empty string'],
+      correctIndex: 2,
+      explanation: 'When there is no match, the right-table columns are returned as NULL.',
+    },
+  ]}
+/>

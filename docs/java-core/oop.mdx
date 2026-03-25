@@ -1,0 +1,83 @@
+---
+title: OOP Basics
+sidebar_position: 2
+---
+
+import TopicProgress from '@site/src/components/TopicProgress';
+import TopicQuiz from '@site/src/components/TopicQuiz';
+
+<TopicProgress topicId="java-core-oop" title="OOP Basics progress" />
+
+# OOP Basics
+
+## Definition
+
+Object-oriented programming is a style of programming where data and behavior are modeled together in objects.
+
+## Four pillars
+
+- Encapsulation
+- Inheritance
+- Polymorphism
+- Abstraction
+
+## Simple explanation
+
+OOP helps organize code around real domain objects. Instead of writing unrelated functions and variables, we create classes that represent entities and give them fields and methods.
+
+## Example
+
+```java
+class Animal {
+    void speak() {
+        System.out.println("sound");
+    }
+}
+
+class Dog extends Animal {
+    @Override
+    void speak() {
+        System.out.println("bark");
+    }
+}
+```
+
+## Common confusion
+
+- **Abstraction** is about hiding unnecessary complexity.
+- **Encapsulation** is about hiding internal state and controlling access to it.
+
+## Practice tasks
+
+1. Explain abstraction vs encapsulation in your own words.
+2. Give one example where composition is better than inheritance.
+3. Write a small parent class and override one method in a child class.
+
+<TopicQuiz
+  topicId="java-core-oop"
+  questions={[
+    {
+      question: 'Which pillar is most closely related to hiding object internals behind methods?',
+      options: ['Inheritance', 'Encapsulation', 'Polymorphism', 'Overloading'],
+      correctIndex: 1,
+      explanation: 'Encapsulation hides internal state and controls access through methods.',
+    },
+    {
+      question: 'Which keyword is used when one class inherits from another in Java?',
+      options: ['implements', 'extends', 'inherits', 'instanceof'],
+      correctIndex: 1,
+      explanation: 'A class inherits from another class with the extends keyword.',
+    },
+    {
+      question: 'What best describes polymorphism?',
+      options: [
+        'One object can be stored only in one collection',
+        'A child class cannot change parent behavior',
+        'The same method call can produce different behavior for different objects',
+        'All fields must be private',
+      ],
+      correctIndex: 2,
+      explanation: 'Polymorphism lets the same method call behave differently depending on the runtime object.',
+    },
+  ]}
+/>

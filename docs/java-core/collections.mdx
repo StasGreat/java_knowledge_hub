@@ -1,0 +1,62 @@
+---
+title: Collections
+sidebar_position: 3
+---
+
+import TopicProgress from '@site/src/components/TopicProgress';
+import TopicQuiz from '@site/src/components/TopicQuiz';
+
+<TopicProgress topicId="java-core-collections" title="Collections progress" />
+
+# Collections
+
+## Quick map
+
+- `List` - ordered, allows duplicates
+- `Set` - unique elements
+- `Map` - key/value pairs
+- `Queue` - processing order
+
+## Example
+
+```java
+List<String> names = new ArrayList<>();
+names.add("Stas");
+names.add("Anna");
+
+Set<String> unique = new HashSet<>(names);
+```
+
+## How to choose
+
+Choose a collection based on ordering, duplicates, lookup speed, sorting, and whether you need keys.
+
+## Practice tasks
+
+1. Explain when `HashMap` is better than `TreeMap`.
+2. Compare `ArrayList` and `LinkedList`.
+3. Write one example where `Set` is the right choice.
+
+<TopicQuiz
+  topicId="java-core-collections"
+  questions={[
+    {
+      question: 'Which collection type is designed to keep only unique elements?',
+      options: ['List', 'Set', 'Map', 'Queue'],
+      correctIndex: 1,
+      explanation: 'Set stores unique elements and does not allow duplicates.',
+    },
+    {
+      question: 'Which interface stores key-value pairs?',
+      options: ['List', 'Collection', 'Map', 'Set'],
+      correctIndex: 2,
+      explanation: 'Map stores pairs of keys and values.',
+    },
+    {
+      question: 'Which implementation keeps keys sorted?',
+      options: ['HashMap', 'TreeMap', 'ArrayList', 'HashSet'],
+      correctIndex: 1,
+      explanation: 'TreeMap stores keys in sorted order.',
+    },
+  ]}
+/>

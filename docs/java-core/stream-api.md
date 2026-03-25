@@ -28,6 +28,7 @@ List<String> result = users.stream()
 - `collect`
 - `reduce`
 
-## Interview question
+## Practice
 
-What is the difference between `map` and `flatMap`?
+1. Explain `map` vs `flatMap`.
+2. Convert a loop into a Stream pipeline.

@@ -22,9 +22,7 @@ public class User {
 }
 ```
 
-## Common interview topics
+## Practice
 
-- entity lifecycle
-- lazy vs eager loading
-- `@OneToMany` and `@ManyToOne`
-- transaction boundaries
+1. Explain `@Entity`, `@Id`, and `@GeneratedValue`.
+2. Compare eager and lazy loading in simple words.

@@ -21,8 +21,7 @@ names.add("Alex");
 Without generics, collections would return `Object` and require explicit casting.
 Generics reduce runtime errors and improve readability.
 
-## Interview question
+## Practice
 
-Why cannot you create `new T()` directly inside a generic class?
-
-Because the real type parameter is erased at runtime.
+1. Explain why `List<String>` is safer than raw `List`.
+2. Explain type erasure in one short paragraph.

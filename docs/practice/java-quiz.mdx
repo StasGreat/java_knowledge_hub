@@ -1,0 +1,42 @@
+---
+title: Java Quiz
+sidebar_position: 2
+---
+
+import TopicQuiz from '@site/src/components/TopicQuiz';
+
+# Java Quiz
+
+This page is a small mixed quiz. It is useful as a warm-up before the final quiz.
+
+<TopicQuiz
+  topicId="mixed-java-quiz"
+  threshold={80}
+  title="Mixed Java warm-up quiz"
+  questions={[
+    {
+      question: 'Which collection does not allow duplicate elements?',
+      options: ['List', 'Set', 'Map', 'ArrayList'],
+      correctIndex: 1,
+      explanation: 'Set is designed to store unique elements.',
+    },
+    {
+      question: 'Which keyword is used to inherit from a class?',
+      options: ['implements', 'extends', 'instanceof', 'super'],
+      correctIndex: 1,
+      explanation: 'Classes inherit from other classes with extends.',
+    },
+    {
+      question: 'Which injection style is usually preferred in Spring?',
+      options: ['Field injection', 'Constructor injection', 'Static injection', 'No injection'],
+      correctIndex: 1,
+      explanation: 'Constructor injection is usually preferred for clarity and testability.',
+    },
+    {
+      question: 'Which SQL join keeps all rows from the left table?',
+      options: ['INNER JOIN', 'LEFT JOIN', 'RIGHT JOIN', 'CROSS JOIN'],
+      correctIndex: 1,
+      explanation: 'LEFT JOIN returns all rows from the left table and matching rows from the right table.',
+    },
+  ]}
+/>

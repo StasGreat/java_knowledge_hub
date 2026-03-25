@@ -1,0 +1,59 @@
+---
+title: Final Quiz
+sidebar_position: 2
+---
+
+import TopicQuiz from '@site/src/components/TopicQuiz';
+
+# Final Quiz
+
+This is a larger mixed quiz across topics. Use it after you finish the main sections.
+
+<TopicQuiz
+  topicId="final-quiz"
+  threshold={80}
+  title="Final knowledge check"
+  questions={[
+    {
+      question: 'Which OOP concept hides internal state and exposes controlled access?',
+      options: ['Inheritance', 'Encapsulation', 'Polymorphism', 'Composition'],
+      correctIndex: 1,
+      explanation: 'Encapsulation hides internal state and controls access through methods.',
+    },
+    {
+      question: 'Which collection is best known for storing unique values?',
+      options: ['ArrayList', 'HashSet', 'HashMap', 'LinkedList'],
+      correctIndex: 1,
+      explanation: 'HashSet is a Set implementation and stores unique elements.',
+    },
+    {
+      question: 'Which statement about checked exceptions is true?',
+      options: [
+        'They never need handling',
+        'They must be handled or declared',
+        'They are always runtime exceptions',
+        'They are only thrown by Spring',
+      ],
+      correctIndex: 1,
+      explanation: 'Checked exceptions must be handled or declared.',
+    },
+    {
+      question: 'What does Dependency Injection provide to an object?',
+      options: ['Only primitive values', 'Only controllers', 'Its required dependencies', 'Only SQL connections'],
+      correctIndex: 2,
+      explanation: 'Dependency Injection provides the dependencies an object needs.',
+    },
+    {
+      question: 'Which SQL join returns only matched rows from both sides?',
+      options: ['LEFT JOIN', 'RIGHT JOIN', 'INNER JOIN', 'FULL JOIN'],
+      correctIndex: 2,
+      explanation: 'INNER JOIN returns only matched rows.',
+    },
+    {
+      question: 'Which SOLID principle says clients should not depend on methods they do not use?',
+      options: ['SRP', 'OCP', 'ISP', 'LSP'],
+      correctIndex: 2,
+      explanation: 'ISP is Interface Segregation Principle.',
+    },
+  ]}
+/>

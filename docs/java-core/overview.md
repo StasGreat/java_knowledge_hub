@@ -5,7 +5,7 @@ sidebar_position: 1
 
 # Java Core Overview
 
-Java Core is the foundation of most backend interviews.
+Java Core is the foundation of the learning path.
 
 ## Focus areas
 
@@ -13,11 +13,11 @@ Java Core is the foundation of most backend interviews.
 - collections and generics
 - exceptions and error handling
 - streams and lambdas
-- memory and object behavior
+- object behavior and state
 
 ## What to be able to do
 
 - explain concepts in simple words
 - compare similar things such as `List` vs `Set`
 - write short code examples
-- answer common interview questions clearly
+- solve mini quizzes and practice tasks

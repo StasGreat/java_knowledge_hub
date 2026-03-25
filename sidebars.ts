@@ -37,13 +37,18 @@ const sidebars: SidebarsConfig = {
     },
     {
       type: 'category',
-      label: 'Interview',
-      items: ['interview/quick-answers'],
+      label: 'Quizzes',
+      items: ['quizzes/topic-quizzes', 'quizzes/final-quiz'],
     },
     {
       type: 'category',
       label: 'Practice',
       items: ['practice/coding-tasks', 'practice/java-quiz'],
+    },
+    {
+      type: 'category',
+      label: 'Progress',
+      items: ['progress/learning-path'],
     },
   ],
 };

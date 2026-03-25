@@ -21,6 +21,7 @@ REST is an architectural style for designing network APIs around resources.
 - `PATCH` - partial update
 - `DELETE` - remove data
 
-## Interview question
+## Practice
 
-What is the difference between PUT and PATCH?
+1. Explain the difference between PUT and PATCH.
+2. Name one good and one bad REST endpoint example.

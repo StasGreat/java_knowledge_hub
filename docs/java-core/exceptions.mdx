@@ -1,0 +1,75 @@
+---
+title: Exceptions
+sidebar_position: 4
+---
+
+import TopicProgress from '@site/src/components/TopicProgress';
+import TopicQuiz from '@site/src/components/TopicQuiz';
+
+<TopicProgress topicId="java-core-exceptions" title="Exceptions progress" />
+
+# Exceptions
+
+## Definition
+
+An exception is an object that represents an error or unexpected condition during program execution.
+
+## Main categories
+
+- checked exceptions
+- unchecked exceptions (`RuntimeException` and its children)
+- errors
+
+## Example
+
+```java
+try {
+    Integer value = Integer.parseInt(input);
+} catch (NumberFormatException ex) {
+    System.out.println("Invalid number");
+}
+```
+
+## Practical rule
+
+Use checked exceptions for recoverable situations that callers are expected to handle. Use unchecked exceptions for programming errors or invalid state.
+
+## Practice tasks
+
+1. Find one checked and one unchecked exception from the JDK.
+2. Explain why `NullPointerException` is unchecked.
+3. Write a method that catches parsing errors and returns an empty optional.
+
+<TopicQuiz
+  topicId="java-core-exceptions"
+  questions={[
+    {
+      question: 'Which statement is true about checked exceptions?',
+      options: [
+        'They do not need to be handled or declared',
+        'They must be handled or declared',
+        'They are all runtime exceptions',
+        'They are never thrown by I/O code',
+      ],
+      correctIndex: 1,
+      explanation: 'Checked exceptions must be handled or declared in the method signature.',
+    },
+    {
+      question: 'Which class is the parent of unchecked exceptions used in normal code?',
+      options: ['Throwable', 'Exception', 'RuntimeException', 'Error'],
+      correctIndex: 2,
+      explanation: 'RuntimeException is the base class for unchecked exceptions used in application code.',
+    },
+    {
+      question: 'What is usually the best interpretation of a NumberFormatException?',
+      options: [
+        'A recoverable I/O problem',
+        'A formatting problem in input data',
+        'A JVM crash',
+        'A database lock issue',
+      ],
+      correctIndex: 1,
+      explanation: 'NumberFormatException means input text cannot be parsed into a valid number.',
+    },
+  ]}
+/>
