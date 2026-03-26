@@ -7,12 +7,14 @@ export type TopicProgressState = {
   opened: boolean;
 };
 
-const defaultState: TopicProgressState = {
-  manualCompleted: false,
-  bestScore: 0,
-  quizPassed: false,
-  opened: false,
-};
+function createDefaultState(): TopicProgressState {
+  return {
+    manualCompleted: false,
+    bestScore: 0,
+    quizPassed: false,
+    opened: false,
+  };
+}
 
 function isBrowser(): boolean {
   return typeof window !== 'undefined';
@@ -23,14 +25,14 @@ function key(topicId: string): string {
 }
 
 export function getTopicProgress(topicId: string): TopicProgressState {
-  if (!isBrowser()) return defaultState;
+  if (!isBrowser()) return createDefaultState();
   const raw = window.localStorage.getItem(key(topicId));
-  if (!raw) return defaultState;
+  if (!raw) return createDefaultState();
 
   try {
-    return { ...defaultState, ...JSON.parse(raw) } as TopicProgressState;
+    return { ...createDefaultState(), ...JSON.parse(raw) } as TopicProgressState;
   } catch {
-    return defaultState;
+    return createDefaultState();
   }
 }
 
@@ -55,7 +57,8 @@ export function setManualCompleted(topicId: string, manualCompleted: boolean): T
 
 export function saveQuizResult(topicId: string, score: number, threshold: number): TopicProgressState {
   const current = getTopicProgress(topicId);
-  const bestScore = Math.max(current.bestScore, score);
+  const normalizedScore = Math.max(0, Math.min(100, score));
+  const bestScore = Math.max(current.bestScore, normalizedScore);
   const quizPassed = current.quizPassed || bestScore >= threshold;
   const next = { ...current, opened: true, bestScore, quizPassed };
   saveTopicProgress(topicId, next);
@@ -63,8 +66,9 @@ export function saveQuizResult(topicId: string, score: number, threshold: number
 }
 
 export function resetTopicProgress(topicId: string): TopicProgressState {
-  saveTopicProgress(topicId, defaultState);
-  return defaultState;
+  const next = createDefaultState();
+  saveTopicProgress(topicId, next);
+  return next;
 }
 
 export function getTopicStatus(state: TopicProgressState): TopicStatus {

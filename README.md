@@ -24,6 +24,12 @@ Local URL is usually:
 http://localhost:3000/java_knowledge_hub/
 ```
 
+Ukrainian locale run:
+
+```bash
+npm run start:uk
+```
+
 ## Build
 
 ```bash

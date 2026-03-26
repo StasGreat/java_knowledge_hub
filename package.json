@@ -4,9 +4,12 @@
   "private": true,
   "scripts": {
     "start": "docusaurus start",
+    "start:ru": "docusaurus start --locale ru",
+    "start:uk": "docusaurus start --locale uk",
     "build": "docusaurus build",
     "serve": "docusaurus serve",
     "clear": "docusaurus clear",
+    "write-translations": "docusaurus write-translations",
     "deploy": "docusaurus deploy"
   },
   "dependencies": {

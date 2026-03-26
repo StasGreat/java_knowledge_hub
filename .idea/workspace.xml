@@ -1,8 +1,162 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;last_opened_file_path&quot;: &quot;E:/Projects/Autotests&quot;
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="ad015156-0f86-46b8-8960-99f255d64998" name="Changes" comment="V2">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/architecture/solid.mdx" beforeDir="false" afterPath="$PROJECT_DIR$/docs/architecture/solid.mdx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/backend/http-rest.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/backend/http-rest.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/database/sql-joins.mdx" beforeDir="false" afterPath="$PROJECT_DIR$/docs/database/sql-joins.mdx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/java-core/collections.mdx" beforeDir="false" afterPath="$PROJECT_DIR$/docs/java-core/collections.mdx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/java-core/exceptions.mdx" beforeDir="false" afterPath="$PROJECT_DIR$/docs/java-core/exceptions.mdx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/java-core/generics.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/java-core/generics.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/java-core/oop.mdx" beforeDir="false" afterPath="$PROJECT_DIR$/docs/java-core/oop.mdx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/java-core/stream-api.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/java-core/stream-api.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/practice/java-quiz.mdx" beforeDir="false" afterPath="$PROJECT_DIR$/docs/practice/java-quiz.mdx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/spring/di-ioc.mdx" beforeDir="false" afterPath="$PROJECT_DIR$/docs/spring/di-ioc.mdx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/spring/jpa-basics.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/spring/jpa-basics.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docusaurus.config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/docusaurus.config.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/ProgressDashboard.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ProgressDashboard.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/QuizCard.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/QuizCard.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/TopicProgress.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/TopicQuiz.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/TopicQuiz.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/css/custom.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/custom.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/data/topics.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/data/topics.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/practice.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/practice.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/progress.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/progress.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/utils/progress.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/progress.ts" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ChangesViewManager">
+    <option name="groupingKeys">
+      <option value="directory" />
+      <option value="module" />
+      <option value="repository" />
+    </option>
+  </component>
+  <component name="EmbeddingIndexingInfo">
+    <option name="cachedIndexableFilesCount" value="41" />
+    <option name="fileBasedEmbeddingIndicesEnabled" value="true" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "StasGreat"
   }
-}</component>
+}]]></component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/StasGreat/java_knowledge_hub.git",
+    "accountId": "7f137106-2271-490c-a17a-3bb760dd39b8"
+  }
+}]]></component>
+  <component name="McpProjectServerCommands">
+    <commands />
+    <urls />
+  </component>
+  <component name="PackageJsonUpdateNotifier">
+    <dismissed value="$PROJECT_DIR$/package.json" />
+  </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 6
+}]]></component>
+  <component name="ProjectId" id="3BS7gIo2duOLbCpgZKXF4Wfaadn" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.MCP Project settings loaded": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1": "true",
+    "git-widget-placeholder": "main",
+    "junie.onboarding.icon.badge.shown": "true",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "D:/code/java_knowledge_hub",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "to.speed.mode.migration.done": "true",
+    "ts.external.directory.path": "C:\\Program Files\\JetBrains\\IntelliJ IDEA 2024.3.7\\plugins\\javascript-plugin\\jsLanguageServicesImpl\\external",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RecapSpentCounter">
+    <option name="endsOfQuotaMs" value="1776452406468" />
+    <option name="spentUsd" value="0.01352075" />
+  </component>
+  <component name="RecapUselessUpdatesCounter">
+    <option name="suspendCountdown" value="2" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\code\java_knowledge_hub" />
+    </key>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-30f59d01ecdd-2fc7cc6b9a17-intellij.indexing.shared.core-IU-253.31033.145" />
+        <option value="bundled-js-predefined-d6986cc7102b-9b0f141eb926-JavaScript-IU-253.31033.145" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="ad015156-0f86-46b8-8960-99f255d64998" name="Changes" comment="" />
+      <created>1774470727668</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1774470727668</updated>
+      <workItem from="1774470728813" duration="13120000" />
+    </task>
+    <task id="LOCAL-00001" summary="V2">
+      <option name="closed" value="true" />
+      <created>1774470970108</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1774470970108</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="V2" />
+    <option name="LAST_COMMIT_MESSAGE" value="V2" />
+  </component>
 </project>

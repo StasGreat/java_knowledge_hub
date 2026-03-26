@@ -3,6 +3,7 @@ title: JPA Basics
 sidebar_position: 3
 ---
 
+
 # JPA Basics
 
 ## Definition

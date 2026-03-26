@@ -1,0 +1,30 @@
+{
+  "link.title.Navigation": {
+    "message": "Навигация",
+    "description": "The title of the footer links column with title=Navigation in the footer"
+  },
+  "link.item.label.Docs": {
+    "message": "Документация",
+    "description": "The label of footer link with label=Docs linking to /docs/intro"
+  },
+  "link.item.label.Practice": {
+    "message": "Практика",
+    "description": "The label of footer link with label=Practice linking to /practice"
+  },
+  "link.item.label.Progress": {
+    "message": "Прогресс",
+    "description": "The label of footer link with label=Progress linking to /progress"
+  },
+  "link.item.label.Final Quiz": {
+    "message": "Финальный квиз",
+    "description": "The label of footer link with label=Final Quiz linking to /docs/quizzes/final-quiz"
+  },
+  "link.item.label.GitHub": {
+    "message": "GitHub",
+    "description": "The label of footer link with label=GitHub linking to https://github.com/StasGreat/java_knowledge_hub"
+  },
+  "copyright": {
+    "message": "Copyright (c) 2026 Java Knowledge Hub <a href=\"https://github.com/StasGreat/java_knowledge_hub\" target=\"_blank\" rel=\"noopener noreferrer\">GitHub<svg width=\"13.5\" height=\"13.5\" aria-label=\"(opens in new tab)\" class=\"iconExternalLink_nPIU\"><use href=\"#theme-svg-external-link\"></use></svg></a>",
+    "description": "The footer copyright"
+  }
+}

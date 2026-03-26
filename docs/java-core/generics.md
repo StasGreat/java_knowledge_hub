@@ -3,6 +3,7 @@ title: Generics
 sidebar_position: 5
 ---
 
+
 # Generics
 
 ## Definition

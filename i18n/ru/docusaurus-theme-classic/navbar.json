@@ -1,0 +1,30 @@
+{
+  "title": {
+    "message": "Java Knowledge Hub",
+    "description": "The title in the navbar"
+  },
+  "logo.alt": {
+    "message": "Логотип Java Knowledge Hub",
+    "description": "The alt text of navbar logo"
+  },
+  "item.label.Learn": {
+    "message": "Обучение",
+    "description": "Navbar item with label Learn"
+  },
+  "item.label.Practice": {
+    "message": "Практика",
+    "description": "Navbar item with label Practice"
+  },
+  "item.label.Progress": {
+    "message": "Прогресс",
+    "description": "Navbar item with label Progress"
+  },
+  "item.label.Final Quiz": {
+    "message": "Финальный квиз",
+    "description": "Navbar item with label Final Quiz"
+  },
+  "item.label.GitHub": {
+    "message": "GitHub",
+    "description": "Navbar item with label GitHub"
+  }
+}

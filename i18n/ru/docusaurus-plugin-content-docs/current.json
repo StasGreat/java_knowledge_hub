@@ -1,0 +1,38 @@
+{
+  "version.label": {
+    "message": "Текущая",
+    "description": "The label for version current"
+  },
+  "sidebar.tutorialSidebar.category.Java Core": {
+    "message": "Ядро Java",
+    "description": "The label for category 'Java Core' in sidebar 'tutorialSidebar'"
+  },
+  "sidebar.tutorialSidebar.category.Backend": {
+    "message": "Бэкенд",
+    "description": "The label for category 'Backend' in sidebar 'tutorialSidebar'"
+  },
+  "sidebar.tutorialSidebar.category.Spring": {
+    "message": "Spring",
+    "description": "The label for category 'Spring' in sidebar 'tutorialSidebar'"
+  },
+  "sidebar.tutorialSidebar.category.Database": {
+    "message": "База данных",
+    "description": "The label for category 'Database' in sidebar 'tutorialSidebar'"
+  },
+  "sidebar.tutorialSidebar.category.Architecture": {
+    "message": "Архитектура",
+    "description": "The label for category 'Architecture' in sidebar 'tutorialSidebar'"
+  },
+  "sidebar.tutorialSidebar.category.Quizzes": {
+    "message": "Квизы",
+    "description": "The label for category 'Quizzes' in sidebar 'tutorialSidebar'"
+  },
+  "sidebar.tutorialSidebar.category.Practice": {
+    "message": "Практика",
+    "description": "The label for category 'Practice' in sidebar 'tutorialSidebar'"
+  },
+  "sidebar.tutorialSidebar.category.Progress": {
+    "message": "Прогресс",
+    "description": "The label for category 'Progress' in sidebar 'tutorialSidebar'"
+  }
+}

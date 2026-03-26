@@ -1,4 +1,5 @@
 import React, { useMemo, useState } from 'react';
+import { translate } from '@docusaurus/Translate';
 
 type QuizCardProps = {
   question: string;
@@ -7,6 +8,33 @@ type QuizCardProps = {
   explanation: string;
   storageKey?: string;
 };
+
+type QuizStats = {
+  attempts: number;
+  correct: number;
+};
+
+const defaultQuizStats: QuizStats = {
+  attempts: 0,
+  correct: 0,
+};
+
+function getQuizStats(storageKey: string): QuizStats {
+  if (typeof window === 'undefined') return defaultQuizStats;
+
+  try {
+    const raw = window.localStorage.getItem(storageKey);
+    if (!raw) return defaultQuizStats;
+
+    const parsed = JSON.parse(raw) as Partial<QuizStats>;
+    return {
+      attempts: Number.isFinite(parsed.attempts) ? parsed.attempts : 0,
+      correct: Number.isFinite(parsed.correct) ? parsed.correct : 0,
+    };
+  } catch {
+    return defaultQuizStats;
+  }
+}
 
 export default function QuizCard({
   question,
@@ -23,8 +51,7 @@ export default function QuizCard({
     if (selected === null) return;
     setSubmitted(true);
     if (typeof window !== 'undefined') {
-      const existing = window.localStorage.getItem(key);
-      const parsed = existing ? JSON.parse(existing) : { attempts: 0, correct: 0 };
+      const parsed = getQuizStats(key);
       const next = {
         attempts: parsed.attempts + 1,
         correct: parsed.correct + (selected === correctIndex ? 1 : 0),
@@ -53,11 +80,24 @@ export default function QuizCard({
         ))}
       </div>
       <button className="button button--primary" type="button" onClick={submit}>
-        Check answer
+        {translate({
+          id: 'quizCard.checkAnswer',
+          message: 'Check answer',
+        })}
       </button>
       {submitted && (
         <div className="quizResult">
-          <p>{selected === correctIndex ? 'Correct.' : 'Incorrect.'}</p>
+          <p>
+            {selected === correctIndex
+              ? translate({
+                  id: 'quizCard.correct',
+                  message: 'Correct.',
+                })
+              : translate({
+                  id: 'quizCard.incorrect',
+                  message: 'Incorrect.',
+                })}
+          </p>
           <p>{explanation}</p>
         </div>
       )}
